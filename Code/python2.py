@@ -132,9 +132,18 @@ def four(input1, input2):
 	# <HINT>
 	# There is a module which can be used to generate random numbers, this module is called random.
 	# The random module contains a function called randint.
-
+from random import randint
 def five():
-    return []
+	new_list=list()
+
+	while len(new_list)<5:
+		new_int = randint(100,200)
+		if new_int%2==0:
+			new_list.append(new_int)
+	
+	return new_list
+
+
 
 	# <QUESTION 6>
 
