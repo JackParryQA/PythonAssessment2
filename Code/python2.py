@@ -190,6 +190,9 @@ def six(input):
 	# Use the cli to access the documentation help(list.sort)
 
 def seven(a, b, c):
+	if (a+b+c)%3==0:
+		return True
+
 	return False
 
 	# <QUESTION 8>
