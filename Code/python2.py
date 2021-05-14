@@ -132,6 +132,7 @@ def four(input1, input2):
 	# <HINT>
 	# There is a module which can be used to generate random numbers, this module is called random.
 	# The random module contains a function called randint.
+from hashlib import new
 from random import randint
 def five():
 	new_list=list()
@@ -211,7 +212,17 @@ def seven(a, b, c):
     # Use the cli to access the documentation help(str.replace)
 
 def eight(input,  a):
-	return ""
+	middle=len(input)//2
+	new_string=''
+	for i in range(len(input)):
+		if a%2!=0:
+			if i<(middle-((a-1)//2)) or i>(middle+((a-1)//2)):
+				new_string+=input[i]
+		else:
+			if i<(middle-(a//2)) or i>(middle+(a//2)):
+				new_string+=input[i]
+
+	return new_string
 
 	# <QUESTION 9>
 
