@@ -162,6 +162,10 @@ def five():
 	# There are no hints for this question.
     
 def six(input):
+	input = input.lower()
+	if input.endswith('py'):
+		return True
+
 	return False
 
 	# <QUESTION 7>
